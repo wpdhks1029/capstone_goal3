@@ -1,2 +1,2 @@
-Source backup staging in progress. Final source snapshot and SHA256 manifest follow in the next commit.
-No robot commands executed.
+Source snapshot prepared; actual leader collection: True
+Runtime not modified or launched. Verify MANIFEST.json before restoring.
