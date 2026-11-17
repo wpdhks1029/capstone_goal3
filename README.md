@@ -1,26 +1,25 @@
-# 정량목표3: 후발 장애물 회피 → 경로 재합류 → 추종
+# 정량목표3 — 2026-11-17 성공 백업 갱신
 
-2026-11-13 사용자 확인 성공 구성의 원본 소스 백업입니다.
+후발 장애물 회피 → 지도/선두 경로 재합류 → 추종 재개 구성.
+사용자가 현재 콜백 수정본의 실물 성공을 확인한 버전이다.
 
-- `home/`: 후발 작업 환경 원본 파일. 경로는 후발 `$HOME` 기준입니다.
-- `leader_home/`: 실제 선두 SSH 수집 원본. 경로는 선두 `$HOME` 기준이며 후발 설정과 혼합하지 않습니다.
-- `RUNBOOK_KO.md`: 현재 목표 정의, 공통 노드, 평가별 시작/전환 명령.
-- `MANIFEST.json`: 파일별 SHA256, 크기, 실행 권한. `verify_snapshot.py`로 검사합니다.
+- **현재 실행 명령:** [RUNBOOK_KO.md](RUNBOOK_KO.md)
+- **성공 기록:** [SUCCESS_RECORD.json](evidence/20261117_success/SUCCESS_RECORD.json)
+- **실제 마지막 결과 원문:** [trial_end_original.json](evidence/20261117_success/trial_end_original.json)
+- **원본 11월 13일 실행표:** [RUNBOOK_20261113_KO.md](RUNBOOK_20261113_KO.md)
+- **소스·모드·바이너리 무결성:** `python3 -B verify_snapshot.py`
 
-ROS2 Humble/Ubuntu 및 기존 시스템 ROS 패키지·장치 권한은 별도로 필요합니다.
-`robot_ws/build`, `install`은 소스가 아니므로 제외했습니다. 복원 후 해당 장치에서 colcon build가 필요합니다.
-후발 LiDAR 실행파일도 소스와 CMakeLists.txt를 보존했으며 현 장치에서 다시 빌드합니다:
-```bash
-source /opt/ros/humble/setup.bash
-cmake -S ~/follower_diagnostics/lidar_sdk_trace -B ~/follower_diagnostics/lidar_sdk_trace/build
-cmake --build ~/follower_diagnostics/lidar_sdk_trace/build -j2
-```
-전체 개인 홈·인증키·비밀번호·캐시·대용량 원시 로그는 저장하지 않습니다.
-오래된 실험 파일도 의존성 누락 방지를 위해 관련 소스 폴더 안에서는 보존했습니다.
-실행할 진입점은 RUNBOOK에 지정된 현재 파일만 사용합니다.
-테스트의 대용량 기록 fixture는 제외될 수 있으므로 이 백업에서 전체 회귀시험이 재현된다고 주장하지 않습니다.
+현재 후발 루트는 `home/nav2_follow_stabilization/goal3_success_tf02524`다.
+원본 evaluation3_reference_wait와 11월 13일 소스는 삭제하지 않았다. 이전 커밋 7df1f0f도 보존한다.
+선두는 11월 13일 실제 수집 파일을 유지했으며 이번에 재수집하지 않았다.
+현재 실행에는 TF0.25.24 코어·발행/계산 분리·입력 대기·콜백 수신 수정이 포함된다.
 
-복원은 로봇 실행을 모두 종료한 뒤 별도 위치에서 해시를 검증하고 필요한 호스트 디렉터리를 검토하여 복사하세요.
-기존 성공 파일을 자동으로 덮어쓰거나 ROS·모터를 실행하는 설치 스크립트는 포함하지 않습니다.
-고정 `/home/sunuk` 경로와 현재 IP는 현 성공 구성을 보존했습니다. 다른 계정/네트워크에서는 수정해야 합니다.
-실물 동작 확인과 정식 평가 합격은 별개이며 자동 실패 결과를 성공으로 수정하지 않았습니다.
+관측 성공과 정식 평가 합격은 구분한다. 마지막 결과 OPERATOR_STOP,
+trial_success=false, evaluation_pass=false를 임의로 성공으로 변경하지 않았다.
+전체 시간 제한은 없지만 남은 센서/모터/기하 검사에 따라 종료될 수 있다.
+
+home/와 leader_home/는 각 호스트 HOME 기준이다. 전체 인증정보·SSH 키·개인 홈·캐시를 저장하지 않는다.
+대용량 원시 주행 로그는 로컬 백업에 보존하고 GitHub에는 원문 마지막 결과와 주요 이벤트를 보존했다.
+실행에 필요한 TF ARM64 라이브러리는 예외적으로 소스와 함께 저장했다.
+ROS 설치·빌드 환경·권한·실제 초기 위치 지정은 대상 장치에서 별도로 필요하다.
+복원/실행/arm을 자동 수행하는 설치 절차는 없다.

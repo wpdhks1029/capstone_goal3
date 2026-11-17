@@ -1,0 +1,18 @@
+{
+  "observer": "reports/sensor_delivery_1794911760429113232.jsonl",
+  "operator_imu_source_ns": 1794911799826581664,
+  "operator_imu_source_age_s": 0.819531855,
+  "operator_imu_receive_age_s": 0.802929324,
+  "independent_imu_max_receive_gap_s": 0.2966530699998202,
+  "independent_imu_max_observed_source_age_s": 0.187497143,
+  "independent_filtered_max_receive_gap_s": 1.1611974699999337,
+  "confirmed_scope": "IMU continued to reach independent observer while operator input stayed stale",
+  "reproduced_mechanism": "Alternating timeout kwargs resets installed rclpy ready iterator and starves tail of continuously ready callback batch",
+  "fix": "One persistent single-thread executor, fixed timeout arguments",
+  "tests_distinct_passed": 25,
+  "test_logs": [
+    "evaluation3_ekf_wait/callback_fairness_tests.log (24/25; one fake-clock boundary assertion subsequently corrected)",
+    "evaluation3_ekf_wait/callback_startup_tests.log (9/9, including corrected boundary test)"
+  ],
+  "physical_validation_pending": true
+}

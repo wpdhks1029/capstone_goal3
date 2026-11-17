@@ -1,0 +1,25 @@
+{
+  "original_log": "local_avoidance_trial_1794907942045140815.jsonl",
+  "last_filtered_source_ns": 1794908060825381618,
+  "stop_ros_ns": 1794908061636199063,
+  "filtered_source_age_at_exception_s": 0.810817445,
+  "raw_and_imu_kept_receiving": true,
+  "motor_faults": [],
+  "modified_runtime_files": [
+    "evaluation3_ekf_wait/candidate/follower_diagnostics/run_local_avoidance_trial.py",
+    "evaluation3_ekf_wait/candidate/follower_diagnostics/filtered_input_wait.py"
+  ],
+  "unchanged": [
+    "original 5cm profile",
+    "pursuit and route math",
+    "odom integration and jump guards",
+    "motor 0.3s watchdogs",
+    "original evaluation3_reference_wait directory"
+  ],
+  "live_motion_test_completed": false,
+  "validation": {
+    "new_ekf_wait_scenarios_passed": 5,
+    "original_reference_wait_operator_regressions_passed": 7,
+    "physical_motion_executed": false
+  }
+}

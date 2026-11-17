@@ -1,0 +1,28 @@
+{
+  "failure_log": "evaluation3_ekf_wait/candidate/follower_diagnostics/logs/local_avoidance_trial_1794910100313712862.jsonl",
+  "failure_log_finished_local": "2026-11-17T19:08:59",
+  "failure_precedes_patch": true,
+  "failure_reason": "FILTERED_ODOM_SCAN_BRACKET_MISSING",
+  "arm_requested": false,
+  "changed_startup_stages": [
+    "AFTER_START",
+    "LEADER_START",
+    "BEFORE_ARM"
+  ],
+  "startup_tests_passed": 6,
+  "regression_tests_passed": 16,
+  "physical_validation_pending": true,
+  "original_backup_files_compared": 605,
+  "original_backup_mismatches": 0,
+  "shared_source_mismatches": 0,
+  "unchanged": [
+    "stop_clearance_m=0.05",
+    "clearance_policy_m=0.1",
+    "driver command/feedback/response deadlines=0.3s",
+    "original route/pursuit/odom math"
+  ],
+  "tests": [
+    "evaluation3_ekf_wait/startup_guard_tests.log",
+    "evaluation3_ekf_wait/startup_flow_regressions.log"
+  ]
+}

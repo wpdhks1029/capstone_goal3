@@ -1,0 +1,13 @@
+{
+  "trial": "local_avoidance_trial_1794911336561461713.jsonl",
+  "reason": "IMU_STALE",
+  "filtered_last_stamp_ns": 1794911365530658731,
+  "alignment_observed_scan_ahead_s": 0.377716269,
+  "filtered_wait_started_ns": 1794911366140364520,
+  "exception_ns": 1794911367441944451,
+  "last_zero_envelope_min_source_ns": 1794911366628244072,
+  "min_source_age_at_exception_s": 0.813700379,
+  "motor_fault_reported": false,
+  "root_cause_scope": "Receiver state stale; publisher versus DDS delivery versus callback scheduling not yet distinguished",
+  "changes": "Diagnostics only: exception source/receive ages and independent read-only sensor observer. No control policy changes."
+}

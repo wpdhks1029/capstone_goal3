@@ -1,0 +1,24 @@
+{
+  "evidence_log": "local_avoidance_trial_1794908778365284399.jsonl",
+  "observed_phase": "PLANNING / filtered input zero hold",
+  "last_control_log_ns": 1794908824544388246,
+  "stop_request_ns": 1794908827260052909,
+  "unattributed_gap_s": 2.715664663,
+  "driver_feedback_fresh": true,
+  "driver_tick_approximately_s": 0.02,
+  "changes": [
+    "Separate-process planner with identical top-level planner function and input/output",
+    "Separate-process latest-only display status publication",
+    "Zero-speed motor-status wait with fresh original stamps and same-epoch/fault checks",
+    "Timing diagnostics for remaining blocking call categories"
+  ],
+  "tests_passed": 19,
+  "physical_validation_pending": true,
+  "unchanged": [
+    "5cm stop",
+    "10cm planning clearance",
+    "route/odom/pursuit math",
+    "0.3s driver command/feedback/response timeouts"
+  ],
+  "display_process_test": "Passed with periodic latest-only publication and real child GIL stall"
+}

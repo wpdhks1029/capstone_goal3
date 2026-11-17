@@ -1,0 +1,13 @@
+{
+  "reason": "OBSERVATION_COMPLETE_NO_REPORTED_FAULT",
+  "seconds": 300.01062527799877,
+  "received": 2646,
+  "maximum_status_receive_gap_s": 0.4249029509992397,
+  "fault": null,
+  "armed": false,
+  "feedback_fresh": true,
+  "feedback_age_s": 0.0803749170008814,
+  "telemetry_isolated": true,
+  "valid_feedback": 3011,
+  "physical_motion_test": false
+}

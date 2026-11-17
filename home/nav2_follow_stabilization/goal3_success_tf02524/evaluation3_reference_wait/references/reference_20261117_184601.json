@@ -1,0 +1,33 @@
+{
+  "reason": "REFERENCE_LINE_CAPTURED",
+  "control_connected": false,
+  "evaluation_pass": false,
+  "reference_only": true,
+  "snapshot": {
+    "reference_origin": [
+      -1.5935511375199065,
+      -0.01379357451406317
+    ],
+    "reference_heading": 0.00674546092390847,
+    "line_fit_residual_m": 0.0,
+    "follower_map_pose": [
+      -1.5935511375199065,
+      -0.01379357451406317,
+      0.006421173525850719,
+      0.0,
+      0.0
+    ],
+    "leader_map_pose": [
+      -0.00307788867759326,
+      -0.0030649366408620742,
+      0.0006367717921869454,
+      -7.093151154889141e-183,
+      0.0
+    ]
+  },
+  "map_yaml": "/home/sunuk/robot_ws/maps/leader_mapping_20261107_143101_9R24Wc/leader_map.yaml",
+  "map_yaml_sha256": "aa2e6060b9b31ce64ec0082515569a64c4fe84b96aa6b730c5f0a703bcebc673",
+  "map_image_sha256": "bb4eaeae3f586cb6452e44e4733c2df553073ee9bef63fbb484a70ebc58e64b9",
+  "captured_ros_ns": 1794908770101030337,
+  "stationary_samples": 61
+}

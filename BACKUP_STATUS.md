@@ -1,2 +1,1 @@
-Source snapshot prepared; actual leader collection: True
-Runtime not modified or launched. Verify MANIFEST.json before restoring.
+2026-11-17 user-confirmed physical success snapshot. Prepared offline; no ROS launch, arm, motor or settings changes.

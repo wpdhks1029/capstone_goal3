@@ -1,0 +1,1105 @@
+{
+  "evaluation3_reference_wait": [
+    {
+      "line": 94,
+      "function": "main.planner",
+      "guards": [
+        "a.follow_only"
+      ],
+      "raised": "ValueError('NO_OBSTACLE_CLUSTER')"
+    },
+    {
+      "line": 152,
+      "function": "main.publish_zero_hold",
+      "guards": [
+        "not 0 <= (sent - source) / 1000000000.0 <= SOURCE_TIMEOUT_S"
+      ],
+      "raised": "Abort('ZERO_HOLD_SOURCE_STALE')"
+    },
+    {
+      "line": 167,
+      "function": "main.pause_reference",
+      "guards": [
+        "str(exc) != 'FILTERED_ODOM_SCAN_BRACKET_MISSING' or not diagnostic or diagnostic.get('kind') not in {'WAITING_FOR_NEWER_POSE', 'POSE_HISTORY_GAP'}"
+      ],
+      "raised": "reraise"
+    },
+    {
+      "line": 209,
+      "function": "main.wait_for_post_arm_sources",
+      "guards": [
+        "mono - armed > SOURCE_TIMEOUT_S"
+      ],
+      "raised": "Abort('POST_ARM_MEASUREMENTS_NOT_READY')"
+    },
+    {
+      "line": 242,
+      "function": "main.imu_cb",
+      "guards": [
+        "m.header.frame_id != 'follower/imu_link' or m.orientation_covariance[0] < 0"
+      ],
+      "raised": "ValueError('IMU_INVALID')"
+    },
+    {
+      "line": 244,
+      "function": "main.imu_cb",
+      "guards": [
+        "max(abs(roll), abs(pitch)) > math.radians(20)"
+      ],
+      "raised": "ValueError('IMU_MOUNT_TILT')"
+    },
+    {
+      "line": 259,
+      "function": "main.motor_cb",
+      "guards": [
+        "not isinstance(s, dict)"
+      ],
+      "raised": "ValueError('status not object')"
+    },
+    {
+      "line": 291,
+      "function": "main.spin",
+      "guards": [
+        "not rclpy.ok()"
+      ],
+      "raised": "Abort('ROS_SHUTDOWN')"
+    },
+    {
+      "line": 304,
+      "function": "main.call",
+      "guards": [
+        "not client.service_is_ready()"
+      ],
+      "raised": "Abort('SERVICE_UNAVAILABLE')"
+    },
+    {
+      "line": 307,
+      "function": "main.call",
+      "guards": [
+        "not f.done()"
+      ],
+      "raised": "Abort('SERVICE_TIMEOUT')"
+    },
+    {
+      "line": 309,
+      "function": "main.call",
+      "guards": [
+        "not response.success"
+      ],
+      "raised": "Abort('SERVICE_REJECTED')"
+    },
+    {
+      "line": 322,
+      "function": "main.fresh_reference",
+      "guards": [
+        "r is None"
+      ],
+      "raised": "ValueError(key.upper() + '_MISSING')"
+    },
+    {
+      "line": 324,
+      "function": "main.fresh_reference",
+      "guards": [
+        "not (0 <= (ns - stamp) / 1000000000.0 <= SOURCE_TIMEOUT_S and 0 <= mono - r[1] <= SOURCE_TIMEOUT_S)"
+      ],
+      "raised": "ValueError(key.upper() + '_STALE')"
+    },
+    {
+      "line": 325,
+      "function": "main.fresh_reference",
+      "guards": [
+        "'raw' not in core.inputs"
+      ],
+      "raised": "ValueError('RAW_MISSING')"
+    },
+    {
+      "line": 326,
+      "function": "main.fresh_reference",
+      "guards": [
+        "a.pose_source not in core.inputs"
+      ],
+      "raised": "ValueError(a.pose_source.upper() + '_MISSING')"
+    },
+    {
+      "line": 327,
+      "function": "main.fresh_reference",
+      "guards": [
+        "a.pose_source == 'filtered' and 'imu' not in core.inputs"
+      ],
+      "raised": "ValueError('IMU_MISSING')"
+    },
+    {
+      "line": 329,
+      "function": "main.fresh_reference",
+      "guards": [
+        "any((abs(v) > 0.01 for v in (l[3], l[4])))"
+      ],
+      "raised": "ValueError('REQUIRE_STATIONARY_LEADER')"
+    },
+    {
+      "line": 338,
+      "function": "main.fresh_reference",
+      "guards": [
+        "path is not None",
+        "not (0 <= (ns - stamp) / 1000000000.0 <= SOURCE_TIMEOUT_S and 0 <= mono - path[1] <= SOURCE_TIMEOUT_S)"
+      ],
+      "raised": "ValueError('PATH_STALE')"
+    },
+    {
+      "line": 347,
+      "function": "main.fresh_reference",
+      "guards": [],
+      "raised": "reraise"
+    },
+    {
+      "line": 361,
+      "function": "main",
+      "guards": [
+        "not arm.service_is_ready() or not disarm.service_is_ready()"
+      ],
+      "raised": "ValueError('SERVICE_NOT_READY')"
+    },
+    {
+      "line": 368,
+      "function": "main",
+      "guards": [],
+      "raised": "Abort('PREFLIGHT_' + last_problem)"
+    },
+    {
+      "line": 383,
+      "function": "main",
+      "guards": [
+        "NOT (a.dynamic_box)",
+        "problem"
+      ],
+      "raised": "Abort(problem)"
+    },
+    {
+      "line": 384,
+      "function": "main",
+      "guards": [
+        "NOT (a.dynamic_box)",
+        "not future.done()"
+      ],
+      "raised": "Abort('PLANNING_TIMEOUT')"
+    },
+    {
+      "line": 389,
+      "function": "main",
+      "guards": [
+        "NOT (a.dynamic_box)",
+        "str(exc) != 'NO_OBSTACLE_CLUSTER'"
+      ],
+      "raised": "reraise"
+    },
+    {
+      "line": 396,
+      "function": "main",
+      "guards": [
+        "a.plan_only",
+        "a.follow_only",
+        "x <= 0 or abs(math.atan2(y, x)) > nav.heading_limit"
+      ],
+      "raised": "Abort('FOLLOW_CHECK_TARGET_NOT_FORWARD')"
+    },
+    {
+      "line": 400,
+      "function": "main",
+      "guards": [
+        "a.plan_only",
+        "a.follow_only",
+        "probe['reason'].startswith('STOP_')"
+      ],
+      "raised": "Abort(probe['reason'])"
+    },
+    {
+      "line": 406,
+      "function": "main",
+      "guards": [
+        "a.plan_only"
+      ],
+      "raised": "Abort('PLAN_ONLY_READY' if plan is not None or a.follow_only or a.dynamic_box else 'PLAN_ONLY_NO_OBSTACLE')"
+    },
+    {
+      "line": 408,
+      "function": "main",
+      "guards": [
+        "not wait_for_start(spin)"
+      ],
+      "raised": "Abort('START_CANCELLED')"
+    },
+    {
+      "line": 410,
+      "function": "main",
+      "guards": [
+        "problem or not graph_ok()"
+      ],
+      "raised": "Abort(problem or 'GRAPH_CHANGED')"
+    },
+    {
+      "line": 412,
+      "function": "main",
+      "guards": [
+        "math.hypot(current.x - start_pose.x, current.y - start_pose.y) > 0.03 or abs(current.yaw - start_pose.yaw) > 0.05"
+      ],
+      "raised": "Abort('POSE_CHANGED_AFTER_PLANNING')"
+    },
+    {
+      "line": 421,
+      "function": "main",
+      "guards": [
+        "plan is not None",
+        "not clear"
+      ],
+      "raised": "Abort('START_ROUTE_CHANGED')"
+    },
+    {
+      "line": 430,
+      "function": "main",
+      "guards": [
+        "NOT (a.frame_check_distance)",
+        "not graph_ok()"
+      ],
+      "raised": "Abort('GRAPH_CHANGED')"
+    },
+    {
+      "line": 432,
+      "function": "main",
+      "guards": [
+        "NOT (a.frame_check_distance)",
+        "problem"
+      ],
+      "raised": "Abort(problem)"
+    },
+    {
+      "line": 435,
+      "function": "main",
+      "guards": [
+        "NOT (a.frame_check_distance)"
+      ],
+      "raised": "Abort('LEADER_START_TIMEOUT')"
+    },
+    {
+      "line": 444,
+      "function": "main",
+      "guards": [
+        "path_observation_fault[0]"
+      ],
+      "raised": "Abort(path_observation_fault[0])"
+    },
+    {
+      "line": 445,
+      "function": "main",
+      "guards": [
+        "a.frame_check_distance and mono - armed >= 60.0"
+      ],
+      "raised": "Abort('FRAME_CHECK_TIME_LIMIT')"
+    },
+    {
+      "line": 446,
+      "function": "main",
+      "guards": [
+        "a.follow_only and mono - armed >= a.follow_check_seconds"
+      ],
+      "raised": "Abort('FOLLOW_CHECK_TIME_LIMIT')"
+    },
+    {
+      "line": 447,
+      "function": "main",
+      "guards": [
+        "a.seconds > 0 and mono - armed >= a.seconds - 0.5"
+      ],
+      "raised": "Abort('TRIAL_TIME_LIMIT')"
+    },
+    {
+      "line": 448,
+      "function": "main",
+      "guards": [
+        "not graph_ok()"
+      ],
+      "raised": "Abort('GRAPH_CHANGED')"
+    },
+    {
+      "line": 450,
+      "function": "main",
+      "guards": [
+        "problem"
+      ],
+      "raised": "Abort(problem)"
+    },
+    {
+      "line": 452,
+      "function": "main",
+      "guards": [
+        "state.get('armed') and state.get('epoch') != epoch"
+      ],
+      "raised": "Abort('SESSION_CHANGED')"
+    },
+    {
+      "line": 453,
+      "function": "main",
+      "guards": [
+        "not state.get('armed') and mono - armed > 0.2"
+      ],
+      "raised": "Abort('UNEXPECTED_DISARM')"
+    },
+    {
+      "line": 466,
+      "function": "main",
+      "guards": [
+        "a.pose_source != 'filtered' or str(exc) != 'FILTERED_ODOM_SCAN_BRACKET_MISSING' or (not diagnostic) or (diagnostic.get('kind') not in ({'WAITING_FOR_NEWER_POSE', 'POSE_HISTORY_GAP'} if a.continuous20 else {'WAITING_FOR_NEWER_POSE'}))"
+      ],
+      "raised": "reraise"
+    },
+    {
+      "line": 477,
+      "function": "main",
+      "guards": [
+        "NOT (a.reference_wait)",
+        "mono - alignment_wait_started >= (0.4 if a.continuous20 else 0.2)"
+      ],
+      "raised": "Abort('FILTERED_SCAN_ALIGNMENT_TIMEOUT')"
+    },
+    {
+      "line": 485,
+      "function": "main",
+      "guards": [
+        "alignment_wait_started is not None",
+        "a.continuous20",
+        "not a.reference_wait and mono - alignment_wait_started >= 0.4"
+      ],
+      "raised": "Abort('FILTERED_SCAN_ALIGNMENT_TIMEOUT')"
+    },
+    {
+      "line": 509,
+      "function": "main",
+      "guards": [
+        "phase == 'REJOIN_BRAKE'",
+        "NOT (state.get('measured_rpm') == [0, 0] and state.get('zero_feedback_samples', 0) >= 3)",
+        "mono - handoff_started > 2.0"
+      ],
+      "raised": "Abort('REJOIN_HANDOFF_ZERO_TIMEOUT')"
+    },
+    {
+      "line": 523,
+      "function": "main",
+      "guards": [
+        "phase == 'FOLLOW'",
+        "scene['scan_stamp'] != last_box_scan",
+        "a.follow_only and box_count >= 3"
+      ],
+      "raised": "Abort('FOLLOW_CHECK_OBSTACLE_DETECTED')"
+    },
+    {
+      "line": 527,
+      "function": "main",
+      "guards": [
+        "phase in ('PLAN_BRAKE', 'PLANNING')",
+        "mono - planning_started > (65.0 if a.continuous20 else 15.0)"
+      ],
+      "raised": "Abort('LOCAL_REPLANNING_TIMEOUT')"
+    },
+    {
+      "line": 538,
+      "function": "main",
+      "guards": [
+        "phase in ('PLAN_BRAKE', 'PLANNING')",
+        "phase == 'PLANNING' and planning.done()",
+        "not clear"
+      ],
+      "raised": "Abort('REPLANNED_ROUTE_CHANGED')"
+    },
+    {
+      "line": 548,
+      "function": "main",
+      "guards": [
+        "core.fsm is None",
+        "phase == 'FOLLOW'",
+        "a.map_rejoin and follow_reason.startswith('STOP_') and (follow_reason not in ('STOP_LEADER_STOPPED', 'STOP_FOLLOW_DISTANCE'))"
+      ],
+      "raised": "Abort(follow_reason)"
+    },
+    {
+      "line": 550,
+      "function": "main",
+      "guards": [
+        "core.fsm is None",
+        "phase == 'FOLLOW'",
+        "follow_source <= 0 or not 0 <= (ns - follow_source) / 1000000000.0 <= SOURCE_TIMEOUT_S"
+      ],
+      "raised": "Abort('FOLLOW_REFERENCE_STALE_OR_MISSING')"
+    },
+    {
+      "line": 560,
+      "function": "main",
+      "guards": [
+        "a.map_rejoin and core.fsm is not None and (core.fsm.controller.stage >= 1)",
+        "not exc.diagnostic['waiting_for_newer_pose']"
+      ],
+      "raised": "reraise"
+    },
+    {
+      "line": 563,
+      "function": "main",
+      "guards": [
+        "a.map_rejoin and core.fsm is not None and (core.fsm.controller.stage >= 1)",
+        "mono - map_alignment_wait_started >= 0.2"
+      ],
+      "raised": "Abort('MAP_FILTERED_POSE_ALIGNMENT_TIMEOUT')"
+    },
+    {
+      "line": 584,
+      "function": "main",
+      "guards": [
+        "a.frame_check_distance",
+        "result['frame_check_travel_m'] >= a.frame_check_distance"
+      ],
+      "raised": "Abort('FRAME_CHECK_COMPLETE')"
+    },
+    {
+      "line": 606,
+      "function": "main",
+      "guards": [
+        "result['reason'].startswith('STOP_') or result['reason'] in ('LOCAL_ROUTE_END', 'PLAN_REQUIRED')"
+      ],
+      "raised": "Abort(result['reason'])"
+    },
+    {
+      "line": 628,
+      "function": "main",
+      "guards": [
+        "a.gentle_pivot and phase == 'AVOID'",
+        "not a.continuous20 and result['geometry_complete'] and (not verification['verified'])"
+      ],
+      "raised": "Abort('STOP_REJOIN_NOT_VERIFIED_IN_MAP')"
+    },
+    {
+      "line": 639,
+      "function": "main",
+      "guards": [
+        "result['geometry_complete']",
+        "NOT (a.continue_follow_after_rejoin)"
+      ],
+      "raised": "Abort('GEOMETRIC_PASS_REJOIN_PLUS_1M')"
+    },
+    {
+      "line": 651,
+      "function": "main",
+      "guards": [
+        "follow_started is not None",
+        "check['verified'] if a.continuous20 else mono - follow_started >= 10.0 and progress >= 0.1"
+      ],
+      "raised": "Abort('REJOIN_AND_FOLLOW_CONFIRMED')"
+    },
+    {
+      "line": 652,
+      "function": "main",
+      "guards": [
+        "follow_started is not None",
+        "mono - follow_started >= (90.0 + 40.0 * (a.post_rejoin_follow_m - 1.0) if a.continuous20 else 20.0)"
+      ],
+      "raised": "Abort('POST_REJOIN_FOLLOW_NOT_CONFIRMED')"
+    },
+    {
+      "line": 664,
+      "function": "main",
+      "guards": [
+        "not 0 <= (sent - source) / 1000000000.0 <= SOURCE_TIMEOUT_S"
+      ],
+      "raised": "Abort('INPUT_AGED_DURING_COMPUTE')"
+    },
+    {
+      "line": 764,
+      "function": "",
+      "guards": [
+        "__name__ == '__main__'"
+      ],
+      "raised": "SystemExit(main())"
+    }
+  ],
+  "evaluation3_ekf_wait": [
+    {
+      "line": 97,
+      "function": "main.planner",
+      "guards": [
+        "a.follow_only"
+      ],
+      "raised": "ValueError('NO_OBSTACLE_CLUSTER')"
+    },
+    {
+      "line": 183,
+      "function": "main.publish_zero_hold",
+      "guards": [
+        "not 0 <= (sent - source) / 1000000000.0 <= SOURCE_TIMEOUT_S"
+      ],
+      "raised": "Abort('ZERO_HOLD_SOURCE_STALE')"
+    },
+    {
+      "line": 200,
+      "function": "main.pause_reference",
+      "guards": [
+        "NOT (str(exc) == 'FILTERED_STALE' and filtered_wait is not None)",
+        "str(exc) != 'FILTERED_ODOM_SCAN_BRACKET_MISSING' or not diagnostic or diagnostic.get('kind') not in {'WAITING_FOR_NEWER_POSE', 'POSE_HISTORY_GAP'}"
+      ],
+      "raised": "reraise"
+    },
+    {
+      "line": 243,
+      "function": "main.wait_for_post_arm_sources",
+      "guards": [
+        "mono - armed > SOURCE_TIMEOUT_S"
+      ],
+      "raised": "Abort('POST_ARM_MEASUREMENTS_NOT_READY')"
+    },
+    {
+      "line": 274,
+      "function": "main.filtered_ready",
+      "guards": [],
+      "raised": "reraise"
+    },
+    {
+      "line": 356,
+      "function": "main.imu_cb",
+      "guards": [
+        "m.header.frame_id != 'follower/imu_link' or m.orientation_covariance[0] < 0"
+      ],
+      "raised": "ValueError('IMU_INVALID')"
+    },
+    {
+      "line": 358,
+      "function": "main.imu_cb",
+      "guards": [
+        "max(abs(roll), abs(pitch)) > math.radians(20)"
+      ],
+      "raised": "ValueError('IMU_MOUNT_TILT')"
+    },
+    {
+      "line": 373,
+      "function": "main.motor_cb",
+      "guards": [
+        "not isinstance(s, dict)"
+      ],
+      "raised": "ValueError('status not object')"
+    },
+    {
+      "line": 406,
+      "function": "main.spin",
+      "guards": [
+        "not rclpy.ok()"
+      ],
+      "raised": "Abort('ROS_SHUTDOWN')"
+    },
+    {
+      "line": 425,
+      "function": "main.prearm_scene",
+      "guards": [
+        "problem and problem != 'MOTOR_STATUS_MISSING_OR_STALE'"
+      ],
+      "raised": "Abort(problem)"
+    },
+    {
+      "line": 426,
+      "function": "main.prearm_scene",
+      "guards": [
+        "not graph_ok()"
+      ],
+      "raised": "Abort('GRAPH_CHANGED')"
+    },
+    {
+      "line": 434,
+      "function": "main.prearm_scene",
+      "guards": [
+        "problem is None",
+        "not alignment and str(exc) not in {'RAW_STALE', 'FILTERED_STALE', 'LEADER_STALE'}"
+      ],
+      "raised": "reraise"
+    },
+    {
+      "line": 438,
+      "function": "main.prearm_scene",
+      "guards": [
+        "problem is None",
+        "not alignment",
+        "stamp is None or stamp <= 0 or ns < stamp or (mono < row[1])"
+      ],
+      "raised": "reraise"
+    },
+    {
+      "line": 441,
+      "function": "main.prearm_scene",
+      "guards": [
+        "not a.reference_wait"
+      ],
+      "raised": "ValueError(detail)"
+    },
+    {
+      "line": 458,
+      "function": "main.prearm_scene",
+      "guards": [
+        "math.hypot(pose.x - start_pose.x, pose.y - start_pose.y) > 0.03 or abs(pose.yaw - start_pose.yaw) > 0.05"
+      ],
+      "raised": "Abort('POSE_CHANGED_AFTER_PLANNING')"
+    },
+    {
+      "line": 466,
+      "function": "main.call",
+      "guards": [
+        "not client.service_is_ready()"
+      ],
+      "raised": "Abort('SERVICE_UNAVAILABLE')"
+    },
+    {
+      "line": 469,
+      "function": "main.call",
+      "guards": [
+        "not f.done()"
+      ],
+      "raised": "Abort('SERVICE_TIMEOUT')"
+    },
+    {
+      "line": 471,
+      "function": "main.call",
+      "guards": [
+        "not response.success"
+      ],
+      "raised": "Abort('SERVICE_REJECTED')"
+    },
+    {
+      "line": 484,
+      "function": "main.fresh_reference",
+      "guards": [
+        "r is None"
+      ],
+      "raised": "ValueError(key.upper() + '_MISSING')"
+    },
+    {
+      "line": 486,
+      "function": "main.fresh_reference",
+      "guards": [
+        "not (0 <= (ns - stamp) / 1000000000.0 <= SOURCE_TIMEOUT_S and 0 <= mono - r[1] <= SOURCE_TIMEOUT_S)"
+      ],
+      "raised": "ValueError(key.upper() + '_STALE')"
+    },
+    {
+      "line": 487,
+      "function": "main.fresh_reference",
+      "guards": [
+        "'raw' not in core.inputs"
+      ],
+      "raised": "ValueError('RAW_MISSING')"
+    },
+    {
+      "line": 488,
+      "function": "main.fresh_reference",
+      "guards": [
+        "a.pose_source not in core.inputs"
+      ],
+      "raised": "ValueError(a.pose_source.upper() + '_MISSING')"
+    },
+    {
+      "line": 489,
+      "function": "main.fresh_reference",
+      "guards": [
+        "a.pose_source == 'filtered' and 'imu' not in core.inputs"
+      ],
+      "raised": "ValueError('IMU_MISSING')"
+    },
+    {
+      "line": 491,
+      "function": "main.fresh_reference",
+      "guards": [
+        "any((abs(v) > 0.01 for v in (l[3], l[4])))"
+      ],
+      "raised": "ValueError('REQUIRE_STATIONARY_LEADER')"
+    },
+    {
+      "line": 500,
+      "function": "main.fresh_reference",
+      "guards": [
+        "path is not None",
+        "not (0 <= (ns - stamp) / 1000000000.0 <= SOURCE_TIMEOUT_S and 0 <= mono - path[1] <= SOURCE_TIMEOUT_S)"
+      ],
+      "raised": "ValueError('PATH_STALE')"
+    },
+    {
+      "line": 509,
+      "function": "main.fresh_reference",
+      "guards": [],
+      "raised": "reraise"
+    },
+    {
+      "line": 523,
+      "function": "main",
+      "guards": [
+        "not arm.service_is_ready() or not disarm.service_is_ready()"
+      ],
+      "raised": "ValueError('SERVICE_NOT_READY')"
+    },
+    {
+      "line": 530,
+      "function": "main",
+      "guards": [],
+      "raised": "Abort('PREFLIGHT_' + last_problem)"
+    },
+    {
+      "line": 545,
+      "function": "main",
+      "guards": [
+        "NOT (a.dynamic_box)",
+        "problem"
+      ],
+      "raised": "Abort(problem)"
+    },
+    {
+      "line": 546,
+      "function": "main",
+      "guards": [
+        "NOT (a.dynamic_box)",
+        "not future.done()"
+      ],
+      "raised": "Abort('PLANNING_TIMEOUT')"
+    },
+    {
+      "line": 551,
+      "function": "main",
+      "guards": [
+        "NOT (a.dynamic_box)",
+        "str(exc) != 'NO_OBSTACLE_CLUSTER'"
+      ],
+      "raised": "reraise"
+    },
+    {
+      "line": 558,
+      "function": "main",
+      "guards": [
+        "a.plan_only",
+        "a.follow_only",
+        "x <= 0 or abs(math.atan2(y, x)) > nav.heading_limit"
+      ],
+      "raised": "Abort('FOLLOW_CHECK_TARGET_NOT_FORWARD')"
+    },
+    {
+      "line": 562,
+      "function": "main",
+      "guards": [
+        "a.plan_only",
+        "a.follow_only",
+        "probe['reason'].startswith('STOP_')"
+      ],
+      "raised": "Abort(probe['reason'])"
+    },
+    {
+      "line": 568,
+      "function": "main",
+      "guards": [
+        "a.plan_only"
+      ],
+      "raised": "Abort('PLAN_ONLY_READY' if plan is not None or a.follow_only or a.dynamic_box else 'PLAN_ONLY_NO_OBSTACLE')"
+    },
+    {
+      "line": 570,
+      "function": "main",
+      "guards": [
+        "not wait_for_start(spin)"
+      ],
+      "raised": "Abort('START_CANCELLED')"
+    },
+    {
+      "line": 572,
+      "function": "main",
+      "guards": [
+        "problem and (not (a.reference_wait and problem == 'MOTOR_STATUS_MISSING_OR_STALE')) or not graph_ok()"
+      ],
+      "raised": "Abort(problem or 'GRAPH_CHANGED')"
+    },
+    {
+      "line": 575,
+      "function": "main",
+      "guards": [
+        "math.hypot(current.x - start_pose.x, current.y - start_pose.y) > 0.03 or abs(current.yaw - start_pose.yaw) > 0.05"
+      ],
+      "raised": "Abort('POSE_CHANGED_AFTER_PLANNING')"
+    },
+    {
+      "line": 584,
+      "function": "main",
+      "guards": [
+        "plan is not None",
+        "not clear"
+      ],
+      "raised": "Abort('START_ROUTE_CHANGED')"
+    },
+    {
+      "line": 593,
+      "function": "main",
+      "guards": [
+        "NOT (a.frame_check_distance)",
+        "not graph_ok()"
+      ],
+      "raised": "Abort('GRAPH_CHANGED')"
+    },
+    {
+      "line": 595,
+      "function": "main",
+      "guards": [
+        "NOT (a.frame_check_distance)",
+        "problem and (not (a.reference_wait and problem == 'MOTOR_STATUS_MISSING_OR_STALE'))"
+      ],
+      "raised": "Abort(problem)"
+    },
+    {
+      "line": 601,
+      "function": "main",
+      "guards": [
+        "NOT (a.frame_check_distance)"
+      ],
+      "raised": "Abort('LEADER_START_TIMEOUT')"
+    },
+    {
+      "line": 605,
+      "function": "main",
+      "guards": [
+        "a.reference_wait",
+        "math.hypot(current.x - start_pose.x, current.y - start_pose.y) > 0.03 or abs(current.yaw - start_pose.yaw) > 0.05"
+      ],
+      "raised": "Abort('POSE_CHANGED_AFTER_PLANNING')"
+    },
+    {
+      "line": 614,
+      "function": "main",
+      "guards": [
+        "path_observation_fault[0]"
+      ],
+      "raised": "Abort(path_observation_fault[0])"
+    },
+    {
+      "line": 615,
+      "function": "main",
+      "guards": [
+        "a.frame_check_distance and mono - armed >= 60.0"
+      ],
+      "raised": "Abort('FRAME_CHECK_TIME_LIMIT')"
+    },
+    {
+      "line": 616,
+      "function": "main",
+      "guards": [
+        "a.follow_only and mono - armed >= a.follow_check_seconds"
+      ],
+      "raised": "Abort('FOLLOW_CHECK_TIME_LIMIT')"
+    },
+    {
+      "line": 617,
+      "function": "main",
+      "guards": [
+        "a.seconds > 0 and mono - armed >= a.seconds - 0.5"
+      ],
+      "raised": "Abort('TRIAL_TIME_LIMIT')"
+    },
+    {
+      "line": 618,
+      "function": "main",
+      "guards": [
+        "not graph_ok()"
+      ],
+      "raised": "Abort('GRAPH_CHANGED')"
+    },
+    {
+      "line": 622,
+      "function": "main",
+      "guards": [
+        "problem"
+      ],
+      "raised": "Abort(problem)"
+    },
+    {
+      "line": 624,
+      "function": "main",
+      "guards": [
+        "state.get('armed') and state.get('epoch') != epoch"
+      ],
+      "raised": "Abort('SESSION_CHANGED')"
+    },
+    {
+      "line": 625,
+      "function": "main",
+      "guards": [
+        "not state.get('armed') and mono - armed > 0.2"
+      ],
+      "raised": "Abort('UNEXPECTED_DISARM')"
+    },
+    {
+      "line": 643,
+      "function": "main",
+      "guards": [
+        "a.pose_source != 'filtered' or str(exc) != 'FILTERED_ODOM_SCAN_BRACKET_MISSING' or (not diagnostic) or (diagnostic.get('kind') not in ({'WAITING_FOR_NEWER_POSE', 'POSE_HISTORY_GAP'} if a.continuous20 else {'WAITING_FOR_NEWER_POSE'}))"
+      ],
+      "raised": "reraise"
+    },
+    {
+      "line": 654,
+      "function": "main",
+      "guards": [
+        "NOT (a.reference_wait)",
+        "mono - alignment_wait_started >= (0.4 if a.continuous20 else 0.2)"
+      ],
+      "raised": "Abort('FILTERED_SCAN_ALIGNMENT_TIMEOUT')"
+    },
+    {
+      "line": 662,
+      "function": "main",
+      "guards": [
+        "alignment_wait_started is not None",
+        "a.continuous20",
+        "not a.reference_wait and mono - alignment_wait_started >= 0.4"
+      ],
+      "raised": "Abort('FILTERED_SCAN_ALIGNMENT_TIMEOUT')"
+    },
+    {
+      "line": 686,
+      "function": "main",
+      "guards": [
+        "phase == 'REJOIN_BRAKE'",
+        "NOT (state.get('measured_rpm') == [0, 0] and state.get('zero_feedback_samples', 0) >= 3)",
+        "mono - handoff_started > 2.0"
+      ],
+      "raised": "Abort('REJOIN_HANDOFF_ZERO_TIMEOUT')"
+    },
+    {
+      "line": 700,
+      "function": "main",
+      "guards": [
+        "phase == 'FOLLOW'",
+        "scene['scan_stamp'] != last_box_scan",
+        "a.follow_only and box_count >= 3"
+      ],
+      "raised": "Abort('FOLLOW_CHECK_OBSTACLE_DETECTED')"
+    },
+    {
+      "line": 704,
+      "function": "main",
+      "guards": [
+        "phase in ('PLAN_BRAKE', 'PLANNING')",
+        "mono - planning_started > (65.0 if a.continuous20 else 15.0)"
+      ],
+      "raised": "Abort('LOCAL_REPLANNING_TIMEOUT')"
+    },
+    {
+      "line": 715,
+      "function": "main",
+      "guards": [
+        "phase in ('PLAN_BRAKE', 'PLANNING')",
+        "phase == 'PLANNING' and planning.done()",
+        "not clear"
+      ],
+      "raised": "Abort('REPLANNED_ROUTE_CHANGED')"
+    },
+    {
+      "line": 725,
+      "function": "main",
+      "guards": [
+        "core.fsm is None",
+        "phase == 'FOLLOW'",
+        "a.map_rejoin and follow_reason.startswith('STOP_') and (follow_reason not in ('STOP_LEADER_STOPPED', 'STOP_FOLLOW_DISTANCE'))"
+      ],
+      "raised": "Abort(follow_reason)"
+    },
+    {
+      "line": 727,
+      "function": "main",
+      "guards": [
+        "core.fsm is None",
+        "phase == 'FOLLOW'",
+        "follow_source <= 0 or not 0 <= (ns - follow_source) / 1000000000.0 <= SOURCE_TIMEOUT_S"
+      ],
+      "raised": "Abort('FOLLOW_REFERENCE_STALE_OR_MISSING')"
+    },
+    {
+      "line": 737,
+      "function": "main",
+      "guards": [
+        "a.map_rejoin and core.fsm is not None and (core.fsm.controller.stage >= 1)",
+        "not exc.diagnostic['waiting_for_newer_pose']"
+      ],
+      "raised": "reraise"
+    },
+    {
+      "line": 740,
+      "function": "main",
+      "guards": [
+        "a.map_rejoin and core.fsm is not None and (core.fsm.controller.stage >= 1)",
+        "mono - map_alignment_wait_started >= 0.2"
+      ],
+      "raised": "Abort('MAP_FILTERED_POSE_ALIGNMENT_TIMEOUT')"
+    },
+    {
+      "line": 761,
+      "function": "main",
+      "guards": [
+        "a.frame_check_distance",
+        "result['frame_check_travel_m'] >= a.frame_check_distance"
+      ],
+      "raised": "Abort('FRAME_CHECK_COMPLETE')"
+    },
+    {
+      "line": 783,
+      "function": "main",
+      "guards": [
+        "result['reason'].startswith('STOP_') or result['reason'] in ('LOCAL_ROUTE_END', 'PLAN_REQUIRED')"
+      ],
+      "raised": "Abort(result['reason'])"
+    },
+    {
+      "line": 805,
+      "function": "main",
+      "guards": [
+        "a.gentle_pivot and phase == 'AVOID'",
+        "not a.continuous20 and result['geometry_complete'] and (not verification['verified'])"
+      ],
+      "raised": "Abort('STOP_REJOIN_NOT_VERIFIED_IN_MAP')"
+    },
+    {
+      "line": 816,
+      "function": "main",
+      "guards": [
+        "result['geometry_complete']",
+        "NOT (a.continue_follow_after_rejoin)"
+      ],
+      "raised": "Abort('GEOMETRIC_PASS_REJOIN_PLUS_1M')"
+    },
+    {
+      "line": 828,
+      "function": "main",
+      "guards": [
+        "follow_started is not None",
+        "check['verified'] if a.continuous20 else mono - follow_started >= 10.0 and progress >= 0.1"
+      ],
+      "raised": "Abort('REJOIN_AND_FOLLOW_CONFIRMED')"
+    },
+    {
+      "line": 829,
+      "function": "main",
+      "guards": [
+        "follow_started is not None",
+        "mono - follow_started >= (90.0 + 40.0 * (a.post_rejoin_follow_m - 1.0) if a.continuous20 else 20.0)"
+      ],
+      "raised": "Abort('POST_REJOIN_FOLLOW_NOT_CONFIRMED')"
+    },
+    {
+      "line": 841,
+      "function": "main",
+      "guards": [
+        "not 0 <= (sent - source) / 1000000000.0 <= SOURCE_TIMEOUT_S"
+      ],
+      "raised": "Abort('INPUT_AGED_DURING_COMPUTE')"
+    },
+    {
+      "line": 966,
+      "function": "",
+      "guards": [
+        "__name__ == '__main__'"
+      ],
+      "raised": "SystemExit(main())"
+    }
+  ]
+}

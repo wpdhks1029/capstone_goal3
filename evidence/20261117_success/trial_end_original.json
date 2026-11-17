@@ -1,0 +1,71 @@
+{
+  "event": "end",
+  "ros_ns": 1794913238371291994,
+  "reason": "OPERATOR_STOP",
+  "leader_started": true,
+  "arm_requested": true,
+  "leader_zero_confirmed": true,
+  "follower_zero_confirmed": true,
+  "post_stop_faults": [],
+  "motion_feedback_seen": true,
+  "trial_success": false,
+  "geometric_complete_candidate": false,
+  "evaluation_pass": false,
+  "controller_kind": "CONTINUOUS10_STOP05_REFERENCE_WAIT_V1",
+  "trial_seconds": 0,
+  "input_source_timeout_s": 0.8,
+  "plan_only": false,
+  "plan_ready": false,
+  "near_return_hold_enabled": false,
+  "continuous_reobservation_enabled": true,
+  "pose_source": "filtered",
+  "dynamic_box": true,
+  "post_rejoin_follow_target_m": 2.0,
+  "obstacle_front_trigger_m": 0.7,
+  "persistent_replan": false,
+  "continuous20": true,
+  "reference_wait_enabled": true,
+  "startup_alignment_wait_episodes": 1,
+  "startup_alignment_wait_total_s": 1.051963762000014,
+  "motor_status_wait_enabled": true,
+  "motor_status_wait_episodes": 1,
+  "motor_status_wait_total_s": 1.1718451040001128,
+  "isolated_io": true,
+  "callback_dispatch": "PERSISTENT_EXECUTOR_FIXED_TIMEOUT",
+  "slow_operations": [
+    {
+      "operation": "callback_drain_and_leader_publish",
+      "duration_s": 0.052775016000396135
+    },
+    {
+      "operation": "callback_drain_and_leader_publish",
+      "duration_s": 0.07749434900006236
+    },
+    {
+      "operation": "callback_drain_and_leader_publish",
+      "duration_s": 0.052368326999840065
+    },
+    {
+      "operation": "callback_drain_and_leader_publish",
+      "duration_s": 0.0665799009998409
+    },
+    {
+      "operation": "log_write",
+      "duration_s": 0.06387174900009995
+    }
+  ],
+  "filtered_input_wait_enabled": true,
+  "filtered_input_wait_episodes": 2,
+  "filtered_input_wait_total_s": 2.7724433539997335,
+  "reference_wait_episodes": 0,
+  "reference_wait_total_s": 0.0,
+  "session_unlimited": true,
+  "clearance_policy_m": 0.1,
+  "stop_clearance_m": 0.05,
+  "follow_lookahead_m": 0.35,
+  "tracked_pursuit_handoff_confirmed": false,
+  "frame_check_distance_m": null,
+  "frame_check_complete": false,
+  "follow_only": false,
+  "follow_check_seconds": null
+}

@@ -1,0 +1,17 @@
+{
+  "upstream": "https://github.com/ros2/geometry2/tree/0.25.24",
+  "installed_deadlock_reproduced": true,
+  "overlay_regression_passed": true,
+  "tests": 200,
+  "hardware_access": false,
+  "sha256": {
+    "build/lib/libtf2.so": "64343691f6812b817a48f684a085ae9348bf3d7132bc444e2b3fbe2c8583c976",
+    "cache.cpp": "03f513c35c40e6113cb05f29a081e16b67686e91738c2c40d6c47e6fe7bc9bbd",
+    "buffer_core.cpp": "788a132956fd3fdd381b32fa8a5426eea52ee07e6e5cc3ea07847af7df435f71",
+    "static_cache.cpp": "8bd82789e9af2c38759a7fad520fb70fe24a935aa7ec9b6b80772180c9a3e967",
+    "time.cpp": "d2e6e42da29117fa6f4dcc199100642e4d2fceaac97814befb42af46bb24a782",
+    "CMakeLists.txt": "5080845ac997ae407552cb75895fc0d0ff3a393fc32a8739adf31546c2d73037",
+    "test_buffer.cpp": "856f653b1cf8f3bdcda5224f74407d79a699cabb0a77b9cb21f4aba1f8f032f0",
+    "build/test_buffer_upstream": "c3b654e49a14d3a6d0990f4d78111b92dafd1164de32314751b8d3f0a16a7046"
+  }
+}

@@ -1,0 +1,780 @@
+
+Repeating all tests (iteration 1) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (5 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (54 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (51 ms)
+[----------] 10 tests from test_buffer (117 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (117 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 2) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (47 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (52 ms)
+[----------] 10 tests from test_buffer (103 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (103 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 3) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (25 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (51 ms)
+[----------] 10 tests from test_buffer (79 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (79 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 4) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (23 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (78 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (78 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 5) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (37 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (91 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (91 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 6) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (41 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (95 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (95 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 7) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (49 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (51 ms)
+[----------] 10 tests from test_buffer (104 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (104 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 8) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (35 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (89 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (89 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 9) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (105 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (158 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (159 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 10) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (49 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (103 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (103 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 11) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (42 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (96 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (96 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 12) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (30 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (85 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (85 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 13) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (33 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (88 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (88 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 14) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (35 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (90 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (90 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 15) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (33 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (87 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (87 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 16) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (36 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (90 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (90 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 17) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (24 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (77 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (77 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 18) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (29 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (83 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (83 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 19) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (34 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (50 ms)
+[----------] 10 tests from test_buffer (88 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (88 ms total)
+[  PASSED  ] 10 tests.
+
+Repeating all tests (iteration 20) . . .
+
+Note: Google Test filter = -test_buffer.timer_ros_wait_for_transform_race
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from test_buffer
+[ RUN      ] test_buffer.construct_with_null_clock
+[       OK ] test_buffer.construct_with_null_clock (0 ms)
+[ RUN      ] test_buffer.can_transform_valid_transform
+[       OK ] test_buffer.can_transform_valid_transform (0 ms)
+[ RUN      ] test_buffer.velocity_transform
+[       OK ] test_buffer.velocity_transform (0 ms)
+[ RUN      ] test_buffer.test_twist
+[       OK ] test_buffer.test_twist (0 ms)
+[ RUN      ] test_buffer.can_transform_without_dedicated_thread
+[       OK ] test_buffer.can_transform_without_dedicated_thread (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_valid
+[       OK ] test_buffer.wait_for_transform_valid (0 ms)
+[ RUN      ] test_buffer.wait_for_transform_timeout
+[       OK ] test_buffer.wait_for_transform_timeout (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race
+[       OK ] test_buffer.wait_for_transform_race (1 ms)
+[ RUN      ] test_buffer.wait_for_transform_race_during_setup
+[       OK ] test_buffer.wait_for_transform_race_during_setup (33 ms)
+[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform
+[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (52 ms)
+[----------] 10 tests from test_buffer (89 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (89 ms total)
+[  PASSED  ] 10 tests.
+[ERROR] [1794902245.591745313] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902245.592322836] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902245.592464623] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902245.707209254] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902245.707247998] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902245.707268907] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902245.810771045] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902245.810801269] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902245.810818659] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902245.891111908] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902245.891160522] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902245.891189136] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902245.969160329] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902245.969206350] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902245.969230574] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902246.061236585] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.061274143] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.061292792] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902246.156551029] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.156589551] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.156609570] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902246.261260448] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.261298099] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.261318081] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902246.350424165] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.350459927] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.350480539] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902246.509459412] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.509495915] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.509514731] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902246.613145796] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.613179484] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.613197207] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902246.709423679] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.709535242] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.709566503] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902246.794641804] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.794681788] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.794704623] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902246.883365972] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.883409012] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.883432717] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902246.973741125] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.973783980] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902246.973808075] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902247.061646347] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902247.061687738] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902247.061714148] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902247.152466351] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902247.152497557] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902247.152514632] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902247.230197032] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902247.230236164] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902247.230258981] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902247.313720184] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902247.313754928] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902247.313772614] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+[ERROR] [1794902247.402326519] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902247.402360188] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+[ERROR] [1794902247.402379189] [tf2_buffer]: Do not call canTransform or lookupTransform with a timeout unless you are using another thread for populating data. Without a dedicated thread it will always timeout.  If you have a separate thread servicing tf messages, call setUsingDedicatedThread(true) on your Buffer instance.
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp
+Warning: Invalid frame ID "bar" passed to canTransform argument target_frame - frame does not exist
+         at line 95 in /home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/buffer_core.cpp

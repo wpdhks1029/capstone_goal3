@@ -1,0 +1,12 @@
+[
+  {
+    "mode": "installed_0.25.23",
+    "exit_code": 1,
+    "output": "Note: Google Test filter = test_buffer.wait_for_transform_does_not_deadlock_with_set_transform\n[==========] Running 1 test from 1 test suite.\n[----------] Global test environment set-up.\n[----------] 1 test from test_buffer\n[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform\n/home/sunuk/nav2_follow_stabilization/goal3_comparison_20261117/tf2_deadlock_fix/test_buffer.cpp:674: Failure\nExpected equality of these values:\n  set_status\n    Which is: 4-byte object <01-00 00-00>\n  std::future_status::ready\n    Which is: 4-byte object <00-00 00-00>\nDeadlock between waitForTransform (timer_to_request_map_mutex_ -> transformable_requests_mutex_) and testTransformableRequests (transformable_requests_mutex_ -> timer_to_request_map_mutex_). \n"
+  },
+  {
+    "mode": "overlay_0.25.24",
+    "exit_code": 0,
+    "output": "Note: Google Test filter = test_buffer.wait_for_transform_does_not_deadlock_with_set_transform\n[==========] Running 1 test from 1 test suite.\n[----------] Global test environment set-up.\n[----------] 1 test from test_buffer\n[ RUN      ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform\n[       OK ] test_buffer.wait_for_transform_does_not_deadlock_with_set_transform (51 ms)\n[----------] 1 test from test_buffer (51 ms total)\n\n[----------] Global test environment tear-down\n[==========] 1 test from 1 test suite ran. (51 ms total)\n[  PASSED  ] 1 test.\n"
+  }
+]

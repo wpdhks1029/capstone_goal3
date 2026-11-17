@@ -1,11 +1,16 @@
 {
-  "date": "2026-11-13",
-  "leader_archive_sha256": "cca5fa5ef06bf5e94e5e06a905680cbfd745b7848c3293076207bf7feb91c750",
-  "user_confirmed_goal3_wait_resume_success": true,
+  "date": "2026-11-17",
+  "previous_success_commit": "7df1f0f69b947196e87db621a353aa3afc99cf16",
+  "user_confirmed_goal3_success": true,
   "formal_evaluation_pass_claimed": false,
-  "source_only": true,
-  "raw_telemetry_and_build_outputs_excluded": true,
-  "local_dependency_files_added": [
-    "home/nav2_follow_stabilization/unicast_wire.py"
-  ]
+  "actual_leader_collected_date": "2026-11-13",
+  "leader_recollected_for_this_update": false,
+  "live_runtime_modified": false,
+  "source_backup_with_required_tf2_binary": true,
+  "current_follower_root": "home/nav2_follow_stabilization/goal3_success_tf02524",
+  "stop_clearance_m": 0.05,
+  "plan_clearance_m": 0.1,
+  "callback_dispatch": "PERSISTENT_EXECUTOR_FIXED_TIMEOUT",
+  "full_raw_log_preserved_locally": true,
+  "credentials_included": false
 }

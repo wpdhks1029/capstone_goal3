@@ -1,0 +1,53 @@
+{
+  "mode": "OFFLINE_PURE_FUNCTIONS_NO_ROS_OR_SERIAL",
+  "identical_dependencies": {
+    "continuous_local_core": true,
+    "continuous_near_return_pause": true,
+    "local_stop_turn_go": true,
+    "directed_path_tracker": true,
+    "follower_pursuit_preview": true,
+    "map_rejoin_guidance": true,
+    "reference_wait": true,
+    "evaluation3_clearance_policy": true,
+    "continuous_avoidance_candidate": true
+  },
+  "compared_scenarios": 16,
+  "success": {
+    "raw_stale": "RAW_STALE",
+    "filtered_stale": "FILTERED_STALE",
+    "imu_stale": "IMU_STALE",
+    "scan_stale": "SCAN_STALE",
+    "leader_reverse_local_scene": "LEADER_UNEXPECTED_MOTION",
+    "leader_rotation_local_scene": "LEADER_UNEXPECTED_MOTION",
+    "leader_reverse_speed_gate": "STOP_LEADER_REVERSE",
+    "leader_rotation_speed_gate": "STOP_LEADER_ROTATING",
+    "after_long_gap_pose_delta_11cm": "STOP_FILTERED_ODOM_JUMP",
+    "workspace_forward_4_51m": "STOP_APF_WORKSPACE_BOUND",
+    "workspace_side_1_26m": "STOP_APF_WORKSPACE_BOUND",
+    "swept_clearance_without_active_pause": "STOP_SWEPT_CLEARANCE",
+    "footprint_starts_pause": "NEAR_RETURN_PAUSE",
+    "footprint_after_two_seconds": "STOP_NEAR_RETURN_WAIT_TIMEOUT",
+    "map_position_step_21cm": "PATH_FOLLOWER_MAP_JUMP",
+    "path_prefix_replaced": "PATH_SESSION_CHANGED_RESTART"
+  },
+  "current": {
+    "raw_stale": "RAW_STALE",
+    "filtered_stale": "FILTERED_STALE",
+    "imu_stale": "IMU_STALE",
+    "scan_stale": "SCAN_STALE",
+    "leader_reverse_local_scene": "LEADER_UNEXPECTED_MOTION",
+    "leader_rotation_local_scene": "LEADER_UNEXPECTED_MOTION",
+    "leader_reverse_speed_gate": "STOP_LEADER_REVERSE",
+    "leader_rotation_speed_gate": "STOP_LEADER_ROTATING",
+    "after_long_gap_pose_delta_11cm": "STOP_FILTERED_ODOM_JUMP",
+    "workspace_forward_4_51m": "STOP_APF_WORKSPACE_BOUND",
+    "workspace_side_1_26m": "STOP_APF_WORKSPACE_BOUND",
+    "swept_clearance_without_active_pause": "STOP_SWEPT_CLEARANCE",
+    "footprint_starts_pause": "NEAR_RETURN_PAUSE",
+    "footprint_after_two_seconds": "STOP_NEAR_RETURN_WAIT_TIMEOUT",
+    "map_position_step_21cm": "PATH_FOLLOWER_MAP_JUMP",
+    "path_prefix_replaced": "PATH_SESSION_CHANGED_RESTART"
+  },
+  "all_equal": true,
+  "limitation": "Operator catch/abort paths also reviewed statically; not full physical ROS scheduling replay"
+}

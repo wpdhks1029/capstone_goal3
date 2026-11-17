@@ -1,0 +1,15 @@
+....F....................
+======================================================================
+FAIL: test_gap_in_final_check_immediately_before_arm_waits_disarmed (test_startup_alignment_wait.StartupAlignmentTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/sunuk/nav2_follow_stabilization/goal3_success_tf02524/evaluation3_ekf_wait/test_startup_alignment_wait.py", line 52, in test_gap_in_final_check_immediately_before_arm_waits_disarmed
+    self.held_disarmed(f,rows,'BEFORE_ARM')
+  File "/home/sunuk/nav2_follow_stabilization/goal3_success_tf02524/evaluation3_ekf_wait/test_startup_alignment_wait.py", line 17, in held_disarmed
+    self.assertTrue(all(e[1]==0 for e in held))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 25 tests in 92.969s
+
+FAILED (failures=1)

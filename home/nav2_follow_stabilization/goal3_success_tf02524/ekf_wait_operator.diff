@@ -1,0 +1,99 @@
+--- success/run_local_avoidance_trial.py
++++ ekf_wait/run_local_avoidance_trial.py
+@@ -125,6 +125,8 @@
+     nav.timeout=SOURCE_TIMEOUT_S
+     from reference_wait import ReferenceWait,ReferenceUnavailable,reference_stamps,MAX_MOTION_SOURCE_AGE_S
+     reference_wait=ReferenceWait() if a.reference_wait else None
++    from filtered_input_wait import FilteredUnavailable,filtered_stamp,fresh_zero_sources
++    filtered_wait=ReferenceWait() if a.reference_wait else None
+     motor=None;mount=None;leader_started=False;arm_requested=False;stopping=False;epoch=None
+     started=None;armed=None;last_leader=0.;last_status=0.;desired_leader=.04
+     leader_zero=follower_zero=False;faults=set();reason='NOT_STARTED';motion_seen=False;last_report_key=None
+@@ -163,12 +165,15 @@
+         try:local=core.scene(ns,mono,require_leader=False)
+         except ValueError as exc:
+             diagnostic=getattr(core,'last_alignment_failure',None)
+-            if (str(exc)!='FILTERED_ODOM_SCAN_BRACKET_MISSING' or not diagnostic
++            if str(exc)=='FILTERED_STALE' and filtered_wait is not None:
++                local=fresh_zero_sources(core,ns,mono)
++            elif (str(exc)!='FILTERED_ODOM_SCAN_BRACKET_MISSING' or not diagnostic
+                     or diagnostic.get('kind') not in {'WAITING_FOR_NEWER_POSE','POSE_HISTORY_GAP'}):raise
+             # scene has already validated local sensor freshness and heading.
+             # Missing interpolation supports STOP only, never a motion scene.
+-            local=dict(source=min([core.inputs[k][0] for k in ('raw','filtered','imu')]+[core.scan[0]]),
+-                       scan_stamp=core.scan[0])
++            else:
++                local=dict(source=min([core.inputs[k][0] for k in ('raw','filtered','imu')]+[core.scan[0]]),
++                           scan_stamp=core.scan[0])
+         publish_zero_hold(local['source'],local['scan_stamp'])
+         core.last_curve=(mono,0.,0.)
+         if first:
+@@ -209,6 +214,49 @@
+         if mono-armed>SOURCE_TIMEOUT_S:raise Abort('POST_ARM_MEASUREMENTS_NOT_READY')
+         publish_zero_hold(source,scan_stamp)
+     path_observation_fault=[None]
++    def filtered_ready(ns,mono,state):
++        nonlocal desired_leader,last_status,stable_since,stable_count,stable_stamp
++        nonlocal follow_started,planning_started,handoff_started,alignment_wait_started,map_alignment_wait_started
++        try:stamp=filtered_stamp(core,ns,mono)
++        except FilteredUnavailable:stamp=None
++        if stamp is not None and not filtered_wait.active:return True
++        first=filtered_wait.enter(mono,invalid=stamp is None)
++        desired_leader=0.;leader_command(0.)
++        local=fresh_zero_sources(core,ns,mono)
++        publish_zero_hold(local['source'],local['scan_stamp'])
++        core.last_curve=(mono,0.,0.)
++        if first:
++            stable_since=None;stable_count=0;stable_stamp=None
++            rejoin_verifier.previous=None;post_follow_verifier.previous=None
++            if reference_wait.active:reference_wait.enter(mono,invalid=True)
++            if alignment_recovery.active:alignment_recovery.enter(mono,invalid=True)
++            log('filtered_input_wait_started',phase=phase)
++            print('[WAIT] EKF 입력 지연: 양쪽 속도0 대기. 새 EKF·스캔 정렬·정지 확인 후 재개합니다.',flush=True)
++        if mono-last_status>=.1:
++            info=dict(v=0.,w=0.,motion='STOP',reason='WAITING_FILTERED_INPUT',trial_phase=phase,
++                source_stamp_ns=local['source'],scan_stamp_ns=local['scan_stamp'])
++            statuspub.publish(String(data=json.dumps(info)));log('filtered_input_wait',**info);last_status=mono
++        if stamp is None:return False
++        try:scene=core.scene(ns,mono,require_leader=False)
++        except ValueError as exc:
++            diagnostic=getattr(core,'last_alignment_failure',None)
++            if str(exc)=='FILTERED_ODOM_SCAN_BRACKET_MISSING' and diagnostic and diagnostic.get('kind') in {'WAITING_FOR_NEWER_POSE','POSE_HISTORY_GAP'}:
++                filtered_wait.enter(mono,invalid=True);return False
++            raise
++        zero=state.get('measured_rpm')==[0,0] and state.get('zero_feedback_samples',0)>=3
++        if not filtered_wait.ready(mono,{'filtered':stamp,'scan':scene['scan_stamp']},zero):return False
++        duration=filtered_wait.finish(mono)
++        if follow_started is not None:follow_started+=duration
++        if planning_started is not None:planning_started+=duration
++        if handoff_started is not None:handoff_started+=duration
++        if near_pause is not None and near_pause.active:near_pause.started+=duration
++        if reference_wait.active:reference_wait.started+=duration
++        if alignment_recovery.active:alignment_recovery.started+=duration
++        if alignment_wait_started is not None:alignment_wait_started+=duration
++        if map_alignment_wait_started is not None:map_alignment_wait_started+=duration
++        log('filtered_input_wait_resumed',waited_s=duration,phase=phase)
++        print('[RESUME] 새 EKF·스캔 정렬·정지 확인. 같은 단계에서 재개합니다.',flush=True)
++        return True
+     def odom_cb(key,m):
+         stamp=m.header.stamp.sec*10**9+m.header.stamp.nanosec;rx=time.monotonic()
+         if key in ('raw','filtered'):
+@@ -455,6 +503,7 @@
+             # Never validate new commands against that cached session.
+             if state.get('armed') is not True or state.get('epoch')!=epoch:
+                 continue
++            if filtered_wait is not None and not filtered_ready(ns,mono,state):continue
+             if reference_wait is not None and not reference_ready(ns,mono,state):continue
+             try:scene=core.scene(ns,mono)
+             except ValueError as exc:
+@@ -744,6 +793,10 @@
+         result['persistent_replan']=False
+         result['continuous20']=a.continuous20
+         result['reference_wait_enabled']=a.reference_wait
++        result['filtered_input_wait_enabled']=filtered_wait is not None
++        result['filtered_input_wait_episodes']=filtered_wait.episodes if filtered_wait else 0
++        result['filtered_input_wait_total_s']=(filtered_wait.total_wait_s+
++            (time.monotonic()-filtered_wait.started if filtered_wait.active else 0.)) if filtered_wait else 0.
+         result['reference_wait_episodes']=reference_wait.episodes if reference_wait else 0
+         result['reference_wait_total_s']=reference_wait.total_wait_s+(time.monotonic()-reference_wait.started if reference_wait.active else 0.) if reference_wait else 0.
+         result['session_unlimited']=a.seconds==0

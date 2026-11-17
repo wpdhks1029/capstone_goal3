@@ -1,0 +1,22 @@
+{
+  "confirmed": "status_pub.publish duration 1.282031957s; next tick gap 1.283651733s; rx_available_bytes=20; device statuses zero; driver disarmed",
+  "not_confirmed": "Why the symptom did not occur at the successful snapshot; which exact DDS internal lock/resource caused this stall",
+  "source_snapshot_note": "Source-only backup does not capture the complete installed runtime or DDS graph state",
+  "case_sources": [
+    "https://github.com/ros2/rmw_fastrtps/issues/754",
+    "https://github.com/ros2/rmw/issues/209",
+    "https://github.com/eProsima/Fast-DDS/issues/1042"
+  ],
+  "case_scope_note": "Similar publication-blocking failure class; not proof of the identical vendor defect or trigger",
+  "fix": "Remove DDS telemetry publication from hardware callbacks using separate spawn processes and nonblocking fixed-size latest slots",
+  "unchanged_control_files": [
+    "follower_motor_candidate.py",
+    "follower_drive_candidate.py",
+    "local_avoidance_drive.py",
+    "follower_position_preview.py",
+    "follower_hardware.yaml",
+    "evaluation3_clearance_policy.py"
+  ],
+  "tests_passed": 13,
+  "physical_validation_pending": true
+}
